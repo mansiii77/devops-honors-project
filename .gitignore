@@ -1,0 +1,28 @@
+# Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+*.pid
+app.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets - NEVER commit PEM keys!
+*.pem
+*.key
+*.p12
+
+# Jenkins
+.jenkins/

@@ -1,0 +1,16 @@
+[Unit]
+Description=DevOps Honors Spring Boot Service
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/app
+ExecStart=/usr/bin/java -jar /home/ec2-user/app/app.jar
+Restart=always
+RestartSec=5
+SuccessExitStatus=143
+Environment=SPRING_PROFILES_ACTIVE=prod
+
+[Install]
+WantedBy=multi-user.target
